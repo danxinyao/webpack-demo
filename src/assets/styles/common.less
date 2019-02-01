@@ -1,0 +1,44 @@
+@import "./_variables";
+
+//  重置浏览器样式
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+html {
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#app {
+    width: 100%;
+    overflow-x: hidden;
+}
+.box {
+    position: relative;
+    width: @base;
+    margin: 0 auto;
+}
+
+// 清除浮动
+.clearfix {
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+        visibility: hidden;
+        height: 0;
+    }
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
